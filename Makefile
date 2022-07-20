@@ -11,3 +11,6 @@ run-mp:
 
 stop-mp:
 	docker-compose down
+
+flask:
+	flask run
