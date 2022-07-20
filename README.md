@@ -52,7 +52,7 @@ This repository contains a Flask implementation of a REST API to process image m
 - [x] Linting
   - [x] Flake8
   - [x] Black
-- [] Folder structure
-- [] Deploy to Heroku
-- [] Deploy to a (cloud or local) Kubernetes cluster with HTTPS
-- [] Deploy to a (cloud or local) Nomad cluster with HTTPS
+- [ ] Folder structure
+- [ ] Deploy to Heroku
+- [ ] Deploy to a (cloud or local) Kubernetes cluster with HTTPS
+- [ ] Deploy to a (cloud or local) Nomad cluster with HTTPS
