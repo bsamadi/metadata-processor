@@ -28,6 +28,8 @@ This repository contains a Flask implementation of a REST API to process image m
 - Run the Gunicorn server: `make gunicorn`
 - Lint the code with Flake8: `make flake8`
 - Autoformat files with Black: `make black`
+- Run unittest tests: `make unittest`
+- Run pytest tests: `make pytest`
 
 # References
 
@@ -45,7 +47,8 @@ This repository contains a Flask implementation of a REST API to process image m
   - [x] `docker-compose`
 - [x] Tests
   - [x] API
-  - [x] Python
+  - [x] Pytest
+  - [x] Unittest
 - [x] Linting
   - [x] Flake8
   - [x] Black
