@@ -4,5 +4,8 @@ build-prod:
 push-prod:
 	docker push bsamadi/metadata-processor:latest
 
-run-prod:
-	docker 
+run-mp:
+	docker-compose up -d
+
+stop-mp:
+	docker-compose down
