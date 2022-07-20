@@ -5,6 +5,7 @@ def create_app():
     app = Flask(__name__)
 
     with app.app_context():
-        from . import routes  # Import routes
+        # Import routes
+        from . import routes  # noqa: F401
 
         return app
