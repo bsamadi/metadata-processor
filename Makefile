@@ -7,10 +7,10 @@ docker-build:
 docker-%:
 	docker $* $(DOCKER_USER)/metadata-processor:latest
 
-run-mp:
+start:
 	docker-compose up -d
 
-stop-mp:
+stop:
 	docker-compose down
 
 requirements:
