@@ -9,8 +9,9 @@ def index():
 
 @app.route('/detect_glare', methods=['GET', 'POST'])
 def detect_glare():
-    payload = request.get_json()
     # payload: 'lat', 'lon', 'epoch', 'orientation'
+    payload = request.get_json()
+    
 
     return {
         "lattitude": payload['lat'],
