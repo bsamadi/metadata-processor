@@ -21,3 +21,9 @@ flask:
 
 gunicorn:
 	gunicorn -w 3 -b "0.0.0.0:5000" -t 30 --reload wsgi:app
+
+flake8:
+	flake8 --exclude env --ignore E402,E501 .
+
+black:
+	black --exclude=env .
