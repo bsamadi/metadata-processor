@@ -2,6 +2,7 @@ import unittest
 from app.sun_pos import sun_pos
 from app.is_glare import is_glare
 
+
 class AnglesTest(unittest.TestCase):
 
     def test_is_glare(self):
@@ -10,4 +11,4 @@ class AnglesTest(unittest.TestCase):
         # Calculate the position of the sun
         sun = sun_pos(payload)
 
-        self.assertTrue(is_glare(sun,payload['orientation']), msg='angle should have been clipped to something smaller')
+        self.assertTrue(is_glare(sun, payload['orientation']), msg='angle should have been clipped to something smaller')
