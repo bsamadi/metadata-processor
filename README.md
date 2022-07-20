@@ -31,11 +31,6 @@ This repository contains a Flask implementation of a REST API to process image m
 - Run unittest tests: `make unittest`
 - Run pytest tests: `make pytest`
 
-# References
-
-* [Flask](https://flask.palletsprojects.com/en/2.1.x/)
-* [Pysolar](https://pysolar.org/)
-
 # Features
 
 - [x] VS Code Devcontainer
@@ -56,3 +51,8 @@ This repository contains a Flask implementation of a REST API to process image m
 - [ ] Deploy to Heroku
 - [ ] Deploy to a (cloud or local) Kubernetes cluster with HTTPS
 - [ ] Deploy to a (cloud or local) Nomad cluster with HTTPS
+
+# References
+
+* [Flask](https://flask.palletsprojects.com/en/2.1.x/)
+* [Pysolar](https://pysolar.org/)
