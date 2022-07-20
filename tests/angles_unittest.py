@@ -16,6 +16,7 @@ class AnglesTest(unittest.TestCase):
         sun = sun_pos(payload)
 
         self.assertEqual(
-            is_glare(sun, payload["orientation"]), "false",
+            is_glare(sun, payload["orientation"]),
+            "false",
             msg="glare should be false",
         )
