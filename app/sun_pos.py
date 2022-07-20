@@ -1,6 +1,7 @@
 import datetime
 from pysolar import solar
 
+# Calculate the altitude and azimuth of the sun given the location and the time
 def sun_pos(payload):
     # Input variables
     lat = payload['lat']     # Lattitude (deg)
@@ -14,4 +15,4 @@ def sun_pos(payload):
     altitude_sun = solar.get_altitude(lat, lon, date) # Sun's altitude (deg)
     azimuth_sun = solar.get_azimuth(lat, lon, date)   # Sun's azimuth (deg)
 
-    return {"altitude": altitude_sun, "azimuth": azimuth_sun}
+    return {'altitude': altitude_sun, 'azimuth': azimuth_sun}
