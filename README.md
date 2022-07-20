@@ -12,7 +12,7 @@ This repository contains a Flask implementation of a REST API to process image m
 - You have two options to test the API
   - Running a server:
     - Run `make flask` to the Flask development server or `make gunicorn` to run the gunicorn server.
-    - Open another terminal and run: `make api_test` or `./tests/api_test.sh` to send a JSON object to the API.
+    - Open another terminal and run: `make api_test` or `./tests/api_test.sh` to send a JSON object to the API server.
   - Running Python tests:
     - Run `make pytest` to run pytest tests
 
@@ -20,7 +20,7 @@ This repository contains a Flask implementation of a REST API to process image m
 
 - Build the Docker image: `make DOCKER_USER=bsamadi docker-build`
 - Push the Docker image to hub.docker.com: `make DOCKER_USER=bsamadi docker-push`
-- Pull the Docker image to hub.docker.com: `make DOCKER_USER=bsamadi docker-pull`
+- Pull the Docker image from hub.docker.com: `make DOCKER_USER=bsamadi docker-pull`
 - Run the API in a Docker container: `make start`
 - Stop the Docker container: `make stop`
 - Install the Python requirements: `make requirements`
