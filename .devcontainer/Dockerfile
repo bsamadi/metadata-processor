@@ -17,4 +17,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
      && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /tmp
-#RUN pip3 install -r /tmp/requirements.txt
+RUN pip3 install -r /tmp/requirements.txt
