@@ -18,3 +18,6 @@ requirements:
 
 flask:
 	flask run
+
+gunicorn:
+	gunicorn -w 3 -b "0.0.0.0:5000" -t 30 --reload wsgi:app
