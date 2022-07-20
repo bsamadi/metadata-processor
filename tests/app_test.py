@@ -5,9 +5,11 @@ from app import create_app
 @pytest.fixture()
 def app():
     app = create_app()
-    app.config.update({
-        "TESTING": True,
-    })
+    app.config.update(
+        {
+            "TESTING": True,
+        }
+    )
 
     # other setup can go here
 
@@ -25,5 +27,13 @@ def runner(app):
 
 
 def test_json_data(client):
-    response = client.post("/detect_glare", json={"lat": 49.2699648, "lon": -123.1290368, "epoch": 1588704959.321, "orientation": -10.2})
+    response = client.post(
+        "/detect_glare",
+        json={
+            "lat": 49.2699648,
+            "lon": -123.1290368,
+            "epoch": 1588704959.321,
+            "orientation": -10.2,
+        },
+    )
     assert response.json["glare"] == "false"

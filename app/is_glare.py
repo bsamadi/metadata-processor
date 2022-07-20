@@ -2,8 +2,8 @@ from app.angle_functions import normalize_angle
 
 
 def is_glare(sun, orientation):
-    altitude_sun = sun['altitude']  # Sun's altitude (deg)
-    azimuth_sun = sun['azimuth']    # Sun's azimuth (deg)
+    altitude_sun = sun["altitude"]  # Sun's altitude (deg)
+    azimuth_sun = sun["azimuth"]  # Sun's azimuth (deg)
 
     heading = normalize_angle(orientation - azimuth_sun)
     altitude = normalize_angle(altitude_sun)
