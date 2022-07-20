@@ -27,3 +27,7 @@ This repository contains a Flask implementation of a REST API to process image m
   - [x] `requirements.txt`
   - [x] `apt.txt`
 - [x] Production Docker image
+  - [x] `docker-compose`
+- [x] Tests
+  - [x] API
+  - [x] Python
