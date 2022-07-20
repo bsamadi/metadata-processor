@@ -27,3 +27,12 @@ flake8:
 
 black:
 	black --exclude=env .
+
+api_test:
+	@./tests/api_test.sh
+
+pytest:
+	python3 -m pytest
+
+unittest:
+	python3 -m unittest discover -s tests -p '*_unittest.py'
