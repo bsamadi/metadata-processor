@@ -3,6 +3,19 @@
 # metadata-processor
 This repository contains a Flask implementation of a REST API to process image metadata.  
 
+## Development
+
+- Clone the repository.
+- Open the folder with VS Code.
+- Click on the bottom left corner and choose "Open Folder in Container".
+- Press Ctrl+` to open a terminal.
+- You have two options to test the API
+  - Running a server:
+    - Run `make flask` to the Flask development server or `make gunicorn` to run the gunicorn server.
+    - Open another terminal and run: `make api_test` or `./tests/api_test.sh` to send a JSON object to the API.
+  - Running Python tests:
+    - Run `make pytest` to run pytest tests
+
 # Make commands
 
 - Build the Docker image: `make DOCKER_USER=bsamadi docker-build`
